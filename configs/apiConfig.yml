@@ -1,0 +1,19 @@
+## 配置文件--配置接口路径，（不做改动的参数）
+Login:  #登录模块
+  login:  #登录接口
+    path: /account/sLogin
+    method: POST
+  logout: #退出接口
+    path: /account/sLout
+    method: POST
+
+Shop:
+  update: # 修改
+    path: /shopping/updatemyshop
+    method: POST
+  query: #查询列表
+    path: /shopping/myShop
+    method: GET
+  file_upload: #上传文件
+    path: /file
+    method: POST

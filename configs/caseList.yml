@@ -1,0 +1,7 @@
+excelDir: 'test_devolop.xls'
+caseName: 'Login'
+arg: ['标题','请求参数','响应预期结果']
+sheetNmae:
+  Login: '登录模块'
+  Shop: '我的商铺'
+runCase: ['001','004-005']
