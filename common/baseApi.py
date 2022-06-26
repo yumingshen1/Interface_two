@@ -15,6 +15,8 @@
     
 """
 import inspect
+import traceback
+
 from utils.handle_path import datas_path,config_path
 import requests,os
 from utils.handle_yml import get_yml_data
@@ -44,8 +46,9 @@ class BaseAPI:
             resp = requests.request(method = method, url=f'{HOST}{url}{id}',data=inData,json=json,params=param,files=file,headers=self.header)
 
             return resp.json() #返回响应体
-        except:
-            raise
+        except Exception as error:
+            log.error(traceback.format_exc())
+            raise error
 
 
     def add(self):
@@ -83,6 +86,6 @@ class ApiAssert:
             elif condition == 'in':
                 assert result in exp_result
         except Exception as error:
-            ##日志
+            log.error(traceback.format_exc())
             raise error
 

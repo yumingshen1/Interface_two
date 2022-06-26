@@ -11,7 +11,7 @@ from utils.handle_path import report_path
 from utils.handles_excel import get_excel_data
 from common.baseApi import ApiAssert
 
-@allure.epic('接口测试A')
+@allure.epic('接口测试-登录')
 @allure.feature('登录模块的接口测试')
 class TestLogin:
 

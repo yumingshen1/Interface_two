@@ -51,5 +51,23 @@
     商品：
     fixtrue:
         conftest.py文件，
+        可以创建登录的fixtrue，先将登录后获得token，将token返回 
+        然后在创建商品类的fixtrue，将登录的fixtrue的函数当做返回值传入商品的fixtrue
+        在商品用例中每个用例调用 商品的fixtrue就行可以获得的token
         
+5，run.sh  /  run.bat 运行
+    cd ./test_cases
+    pytest -s --alluredir ../outfiles/report --clean-alluredir
+    allure serve ../outfiles/report
 
+6，定制用例：
+    pytest.mark.xxx  定制
+        需要在项目根目录下新建pytest.ini文件
+        固定写法：
+            [pytest]
+            markers = 
+            xxx:描述
+        在运行时加入参数 '-m'，'xxx'
+    pytest.mark.skip(reason=原因) 无条件跳过 ， pytest.mark.skipif(布尔表达式，reason=原因)条件跳过
+        直接在用例方法上使用
+        可以写成一个变量，在需要的方法调用

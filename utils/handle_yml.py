@@ -4,7 +4,7 @@
 # @File : handle_yml.py
 # @Software : PyCharm
 import yaml,os
-from utils.handle_path import config_path
+from utils.handle_path import config_path,datas_path
 
 
 def get_yml_data(filedir):
@@ -16,5 +16,5 @@ def get_yml_data(filedir):
 
 if __name__ == '__main__':
     # print(get_yml_data('../configs/apiConfig.yml')
-    filepath = os.path.join(config_path,'apiConfig.yml')
+    filepath = os.path.join(datas_path,'data_type.yml')
     print(get_yml_data(filepath))
