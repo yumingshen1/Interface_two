@@ -1,0 +1,56 @@
+- #商品用例01
+  detail: 页数和记录数为"1"
+  data:
+    page: 1
+    limit: 1
+  resp:
+    code: 20000
+
+- #商品用例02
+  detail: 页数为"0"，记录数为"1"
+  data:
+    page: 0
+    limit: 1
+  resp:
+    code: 20000
+
+- #商品用例03
+  detail: 页数为-"1"，记录数为"1"
+  data:
+    page: -1
+    limit: 1
+  resp:
+    code: 20000
+
+- #商品用例04
+  detail: 页数为2，记录数为"1"
+  data:
+    page: 2
+    limit: 1
+  resp:
+    code: 20000
+
+- #商品用例05
+  detail: 页数为"1"，记录数为"0"
+  data:
+    page: 1
+    limit: 0
+  resp:
+    error: Internal Server Error
+
+
+- #商品用例06
+  detail: 页数为"1"，记录数为"-1"
+  data:
+    page: 1
+    limit: -1
+  resp:
+    error: Internal Server Error
+
+- #商品用例07
+  detail: 页数为"1"，记录数为"21"
+  data:
+    page: 1
+    limit: 21
+  resp:
+    code: 20000

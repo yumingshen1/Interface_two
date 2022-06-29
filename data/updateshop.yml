@@ -1,0 +1,48 @@
+-
+  detail: 修改店铺名称
+  data: {
+    "name": "星巴克新建店",
+    "address": "上海市静安区秣陵路303号",
+    "id": "3269",
+    "Phone": "13176876632",
+    "rating": "6.0",
+    "recent_order_num": 100,
+    "category": "快餐便当/简餐",
+    "description": "满30减5，满60减8",
+    "image_path": "b8be9abc-a85f-4b5b-ab13-52f48538f96c.png",
+    "image": "http://121.41.14.39:8082/file/getImgStream?fileName=b8be9abc-a85f-4b5b-ab13-52f48538f96c.png"
+    }
+  resp:
+    code: 20000
+-
+  detail: 修改店铺地址
+  data: {
+            "name": "星巴克新建店",
+            "address": "上海市静安区秣陵街道303号路",
+            "id": "3269",
+            "Phone": "13176876632",
+            "rating": "6.0",
+            "recent_order_num":100,
+            "category": "快餐便当/简餐",
+            "description": "满30减5，满60减8",
+            "image_path": "b8be9abc-a85f-4b5b-ab13-52f48538f96c.png",
+            "image": "http://121.41.14.39:8082/file/getImgStream?fileName=b8be9abc-a85f-4b5b-ab13-52f48538f96c.png"
+        }
+  resp:
+    code: 20000
+-
+  detail: 修改店铺评分
+  data: {
+            "name": "星巴克新建店",
+            "address": "上海市静安区秣陵路303号",
+            "id": "3269",
+            "Phone": "13176876632",
+            "rating": "5.0",
+            "recent_order_num":100,
+            "category": "快餐便当/简餐",
+            "description": "满30减5，满60减8",
+            "image_path": "b8be9abc-a85f-4b5b-ab13-52f48538f96c.png",
+            "image": "http://121.41.14.39:8082/file/getImgStream?fileName=b8be9abc-a85f-4b5b-ab13-52f48538f96c.png"
+        }
+  resp:
+    code: 20000

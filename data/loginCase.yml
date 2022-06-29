@@ -15,3 +15,39 @@
   resp:
     code: 9999
     msg: 输入的密码错误!
+
+- #登录测试用03
+  detail: 用户名为空，密码正确
+  data:
+    username: " "
+    password: '44982'
+  resp:
+    code: 9999
+    msg: 该用户不存在!
+
+- #登录测试用04
+  detail: 用户名正确，密码错误
+  data:
+    username: zo0385
+    password: '4498222'
+  resp:
+    code: 9999
+    msg: 输入的密码错误!
+
+- #登录测试用05
+  detail: 用户名和密码都为空
+  data:
+    username: " "
+    password: " "
+  resp:
+    code: 9999
+    msg: 该用户不存在!
+
+- #登录测试用06
+  detail: 用户名错误，密码正确
+  data:
+    username: zo0385111
+    password: '44982'
+  resp:
+    code: 9999
+    msg: 该用户不存在!
