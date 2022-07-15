@@ -51,9 +51,8 @@ class BaseAPI:
             raise error
 
 
-    def add(self):
-        pass
-
+    def add(self,inData):
+        return self.request_send(data = inData)
 
     def delete(self):
         pass
