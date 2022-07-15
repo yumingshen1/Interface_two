@@ -8,9 +8,11 @@ import copy
 from common.baseApi import BaseAPI
 from configs.config import NAMEPASS
 from utils.handle_md5 import get_hash_data
+from utils.handle_zhuangshiqi import show_time
 
 class Login(BaseAPI):
     #登录
+    @show_time
     def login(self,inData,getToken=False):
         inData = copy.copy(inData)  #copy数据
         inData['password'] = get_hash_data(inData['password'])  #加密密码
